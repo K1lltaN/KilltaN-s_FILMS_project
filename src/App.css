@@ -1,0 +1,123 @@
+header {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgba(141, 111, 46, 0.605);
+}
+
+.single_page {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(70, 42, 17, 0.324);
+  backdrop-filter: blur(5px);
+}
+
+.close_btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+.single {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single_page img {
+  max-width: 300px;
+}
+.single_page h2 {
+  position: relative;
+  left: 30%;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  color: aliceblue;
+  background-color: rgb(255, 166, 0);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  transition: 0.5s;
+}
+button:hover {
+  border-radius: 1rem;
+}
+
+.search_conteiner {
+  border-radius: 1rem;
+  background-color: rgba(121, 108, 39, 0.68);
+  position: fixed;
+  right: 10%;
+  top: 2%;
+  height: 4rem;
+}
+nav {
+  position: absolute;
+  left: 30%;
+}
+input {
+  margin: 1rem;
+  height: 30px;
+}
+
+.active {
+  border: rgba(145, 80, 0, 0.783) solid 2px;
+  background-color: rgb(255, 153, 0);
+}
+
+.overview {
+  padding: 1rem;
+  background-color: rgb(134, 80, 9);
+  border-radius: 1rem;
+}
+
+.rate {
+  position: relative;
+}
+
+.pagination {
+  display: flex;
+}
+footer {
+  color: rgb(158, 242, 242);
+  background-color: rgb(7, 7, 7);
+  height: 5rem;
+}
+.nav_footer {
+  position: relative;
+  top: -1.5rem;
+  left: 2rem;
+}
+.nav_footer button {
+  background-color: rgb(0, 0, 0);
+  font-size: 1rem;
+  display: grid;
+}
+.reserved {
+  position: relative;
+  top: 1rem;
+  left: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  .search_conteiner {
+    position: fixed;
+    right: 5%;
+    top: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    display: grid;
+  }
+}
